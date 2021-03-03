@@ -1,2 +1,1 @@
-# OOP-Project
-Game name -> SmithSpace
+# OOP-SpaceMala

@@ -6,9 +6,8 @@ La vita e i danni dei nemici andranno crescendo col passare dei round, ci sarà 
 Funzionalità minimali ritenute obbligatorie:
 
 * Creazione del menu con le varie sezioni principali :
-- Start
-- Settings
-- Score Board
+- Start (con scelta del nickname)
+- Settings (comandi navicella , audio)
 - Help
 
 * Creazione dell ambiente di gioco, tra cui HUD, griglia di posizione.
@@ -20,17 +19,28 @@ Funzionalità minimali ritenute obbligatorie:
 - Asteroidi
 - Fire System
 
-* ??????
+* Gestione del movimento e delle collisione degli oggetti del gioco 
 
+* Creazione di comandi appositi per la navicella
+
+* Cambio background a seconda tempo
+
+* Logica nemici che vanno a sbattere contro la navicella
 
 
 Funzionalità opzionali:
 
-* Inserimento di ostacoli negli ambienti personalizzati, da utilizzare per il calcolo delle zone d'ombra
+* Aggiunta di munizioni e bonus speciali
 
-* Inserimento e posizionamento con visualizzazione della mappa satellitare (usando servizi come google maps od openstreetmap)
+* Funzionalità di sparo per i nemici semplici
 
-* Calcolo delle condizioni di temperatura e umidità attese utilizzando servizi meteo disponibili sul web, con notifica in caso di condizioni rischiose (e.g. prevista grandine, o forte vento, o possibile gelata fuori stagione)
+* Creazione di classifica tramite tabella dello score raggiunto dai giocatori, con aggiunt dello Score Board nel menu
+
+* Scelta nel settings per il livello di difficoltà
+
+* Easter egg 
+
+* Composizione comandi speciali
 
 
 

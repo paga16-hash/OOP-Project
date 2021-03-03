@@ -1,2 +1,2 @@
 # OOP-Project
-Name game -> SmithSpace
+Game name -> SmithSpace

@@ -34,6 +34,10 @@ public class MenuEngine implements GUIEngine {
         return this.state;
     }
     @Override
+    public void setState(boolean state) {
+        this.state = state;
+    }
+    @Override
     public void changeState(){
         this.state = !state;
     }
@@ -55,3 +59,4 @@ public class MenuEngine implements GUIEngine {
     }
 
 }
+

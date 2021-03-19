@@ -8,6 +8,8 @@ public interface GUIEngine {
 
     public boolean getState();
 
+    public void setState(final boolean state);
+
     public void changeState();
 
     public IdGUI getId();

@@ -12,7 +12,7 @@ public class ScoreboardEngine implements GUIEngine{
     private final List<NameScoreboardGUI> nameButtons = new ArrayList<>();
 
     private final IdGUI ID = IdGUI.ID_SCOREBOARD;
-    private final IdGUI back = IdGUI.ID_MENU;
+    private final IdGUI back = IdGUI.ID_BACK;
 
     private boolean state = false;
 
@@ -28,6 +28,12 @@ public class ScoreboardEngine implements GUIEngine{
     public boolean getState(){
         return this.state;
     }
+
+    @Override
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
     @Override
     public void changeState(){
         this.state = !state;
@@ -48,6 +54,4 @@ public class ScoreboardEngine implements GUIEngine{
     public List<NameScoreboardGUI> getListName(){
         return this.nameButtons;
     }
-
-
 }

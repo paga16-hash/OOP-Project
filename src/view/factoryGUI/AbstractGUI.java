@@ -38,4 +38,8 @@ public abstract class AbstractGUI extends JFrame{
 
     public abstract void setFontTitle(final Font font);
 
+    public JPanel getPanel(){
+        return this.panel;
+    }
+
 }

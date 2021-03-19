@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class ButtonID extends JButton {
     private IdGUI currentIdGUI;
-    private IdGUI intoIdGUI;
+    private IdGUI commandIdGUI;
 
     public ButtonID(){
         super();
@@ -20,19 +20,19 @@ public class ButtonID extends JButton {
         this.currentIdGUI = currentGUIID;
     }
 
-    public IdGUI getIntoIdGUI() {
-        return intoIdGUI;
+    public IdGUI getCommandIdGUI() {
+        return commandIdGUI;
     }
 
-    public void setIntoIdGUI(IdGUI intoIdGUI) {
-        this.intoIdGUI = intoIdGUI;
+    public void setCommandIdGUI(IdGUI commandIdGUI) {
+        this.commandIdGUI = commandIdGUI;
     }
 
     @Override
     public String toString() {
         return "ButtonID{" +
                 "currentGUIID=" + currentIdGUI +
-                ", intoGUIID=" + intoIdGUI +
+                ", intoGUIID=" + commandIdGUI +
                 '}';
     }
 }

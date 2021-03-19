@@ -23,13 +23,13 @@ public class PanelDifficult extends JPanel{
 
 
 
-        URL imgURL = ClassLoader.getSystemResource("easy.png");
-        ImageIcon img = new ImageIcon(imgURL);
-        Image mage = img.getImage();
-        Image newMage = mage.getScaledInstance(60, 40, Image.SCALE_SMOOTH);
-        img.setImage(newMage);
-        
-        this.rbtEasy.setIcon(img);
+//        URL imgURL = ClassLoader.getSystemResource("easy.png");
+//        ImageIcon img = new ImageIcon(imgURL);
+//        Image mage = img.getImage();
+//        Image newMage = mage.getScaledInstance(60, 40, Image.SCALE_SMOOTH);
+//        img.setImage(newMage);
+//
+//        this.rbtEasy.setIcon(img);
 
     }
 

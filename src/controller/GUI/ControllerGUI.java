@@ -1,8 +1,8 @@
-package controller;
+package controller.GUI;
 
-import controller.CommandGUI.CommandEngine;
-import controller.CommandGUI.OFFCommandEngine;
-import controller.CommandGUI.ONCommandEngine;
+import controller.GUI.CommandGUI.CommandEngine;
+import controller.GUI.CommandGUI.OFFCommandEngine;
+import controller.GUI.CommandGUI.ONCommandEngine;
 import model.factoryGUI.GUIEngine;
 import utilities.IdGUI;
 import view.factoryGUI.GUI;

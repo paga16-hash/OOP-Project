@@ -1,4 +1,4 @@
-package controller.CommandGUI;
+package controller.GUI.CommandGUI;
 
 import model.factoryGUI.GUIEngine;
 

@@ -12,19 +12,16 @@ import java.util.List;
 public class SettingsEngine implements GUIEngine {
     private final String TITLE_SETTINGS = "SETTINGS";
     private final IdGUI ID = IdGUI.ID_SETTING;
-    private final List<NameSettigsGUI> namesButtons = new ArrayList<>();
+    private final List<NameSettigsGUI> namesButtons = List.of(NameSettigsGUI.values());
     private final List<IdGUI> linksID = new ArrayList<>();
 
-    private List<SkinSpaceShip> listSpaceSkin = List.of(SkinSpaceShip.values());
     private int chooseSkin = 0;
-    private MyJImageEngine skinSpaceShip = new MyJImageEngine(150, 160 , listSpaceSkin.get(this.chooseSkin).getPath());
+    private MyJImageEngine skinSpaceShip = new MyJImageEngine(150, 160 , SkinSpaceShip.values()[this.chooseSkin].getPath());
     private Difficult difficultState = Difficult.EASY_DIFFICULT;
     private boolean state = false;
 
     public SettingsEngine(){
-        Collections.addAll(this.namesButtons, NameSettigsGUI.values());
         this.linksID.add(IdGUI.ID_BACK);
-        System.out.println(listSpaceSkin);
     }
 
     @Override
@@ -75,13 +72,13 @@ public class SettingsEngine implements GUIEngine {
     }
 
     public void changeSkinDx(){
-        this.chooseSkin = this.chooseSkin + 1 < this.listSpaceSkin.size() ? this.chooseSkin + 1 : 0;
-        this.skinSpaceShip.setPath(this.listSpaceSkin.get(this.chooseSkin).getPath());
+        this.chooseSkin = this.chooseSkin + 1 < SkinSpaceShip.values().length ? this.chooseSkin + 1 : 0;
+        this.skinSpaceShip.setPath(SkinSpaceShip.values()[this.chooseSkin].getPath());
     }
 
 
     public void changeSkinSx(){
-        this.chooseSkin = this.chooseSkin - 1 > -1 ? this.chooseSkin - 1 : this.listSpaceSkin.size() - 1;
-        this.skinSpaceShip.setPath(this.listSpaceSkin.get(this.chooseSkin).getPath());
+        this.chooseSkin = this.chooseSkin - 1 > -1 ? this.chooseSkin - 1 : SkinSpaceShip.values().length - 1;
+        this.skinSpaceShip.setPath(SkinSpaceShip.values()[this.chooseSkin].getPath());
     }
 }

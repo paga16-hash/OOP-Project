@@ -1,4 +1,4 @@
-package controller.GUI.CommandGUI;
+package controller.GUI.Command;
 
 import view.factoryGUI.GUI;
 
